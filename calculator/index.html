@@ -25,15 +25,34 @@
                 <div class="mb-3">
                     <h5>Daily Water Drinking Calculator</h5>
                     <div>
+                      <div class="mt-3">
+                        <fieldset class="row mb-3">
+                          <legend class="col-form-label col-sm-2 pt-0">Unit</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="unitRadio" id="ageRadio1" value="option1" checked>
+                              <label class="form-check-label" for="unitRadio1">
+                                Imperial
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="unitRadio" id="ageRadio2" value="option2">
+                              <label class="form-check-label" for="unitRadio2">
+                                Metric
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
                         <div class="mt-3">
-                            <label for="formGroupExampleInput" class="form-label form-label-bold">What is your lifestyle?</label>
+                            <label for="formGroupExampleInput" class="form-label form-label-bold">How often do you exercise a week?</label>
                         </div>        
                         <div>
                             <select class="form-select form-select-sm" aria-label="Default select example">
                                 <option selected>Open this select menu</option>
-                                <option value="1">Active</option>
-                                <option value="2">Normal</option>
-                                <option value="3">Not Active</option>
+                                <option value="1">At least 30mins per day</option>
+                                <option value="2">At least 3 times per week for 30mins </option>
+                                <option value="3">Minimum to no excerise </option>
                             </select>
                         </div>
                     </div>
@@ -53,54 +72,21 @@
                               Female
                             </label>
                           </div>
+                          <div class="mb-3">
+                            <label for="weight" class="form-label">Please enter your weight</label>
+                            <input type="text" class="form-control" id="weightInput">
+                          </div>
+                          <div class="mb-3">
+                            <label for="height" class="form-label">Please enter your height</label>
+                            <input type="text" class="form-control" id="heightInput">
+                          </div>
+                          <div class="mb-3">
+                            <label for="age" class="form-label">Please enter your age</label>
+                            <input type="text" class="form-control" id="ageInput">
+                          </div>
                         </div>
                       </fieldset>
                     </div>
-                    <div class="mt-3">
-                        <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Age</legend>
-                        <div class="col-sm-10">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ageRadio" id="ageRadio1" value="option1" checked>
-                            <label class="form-check-label" for="ageRadio1">
-                              15-20
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ageRadio" id="ageRadio2" value="option2">
-                            <label class="form-check-label" for="ageRadio2">
-                              21-30
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ageRadio" id="ageRadio3" value="option3">
-                            <label class="form-check-label" for="ageRadio3">
-                              31-40
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ageRadio" id="ageRadio4" value="option4">
-                            <label class="form-check-label" for="ageRadio4">
-                              41-50
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ageRadio" id="ageRadio5" value="option5">
-                            <label class="form-check-label" for="ageRadio5">
-                              51-60
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="ageRadio" id="ageRadio6" value="option6">
-                            <label class="form-check-label" for="ageRadio6">
-                              61-70
-                            </label>
-                          </div>
-
-                        </div>
-                      </fieldset>
-                    </div>
-                </div>
                 <button type="submit" class="btn btn-primary">Let's Check</button>
             </form>
         </div>
